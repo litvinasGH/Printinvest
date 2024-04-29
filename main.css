@@ -12,6 +12,7 @@ header ul{
     color: white;
     display: flex;
     margin: 0;
+    padding: 0;
 }
 header ul il{
     flex-grow: 1;
