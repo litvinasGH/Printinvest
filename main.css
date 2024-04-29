@@ -1,0 +1,56 @@
+header{
+    background-color: #0F6985;
+    text-align: center;
+}
+.logo{
+
+    margin: 0;
+}
+header ul{
+    margin-top: 0;
+    background-color: #054256;
+    color: white;
+    display: flex;
+    margin: 0;
+}
+header ul il{
+    flex-grow: 1;
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+div{
+    border: black 1px solid;
+    height: 200px;
+    margin: 0;
+}
+
+.firstdiv, .secdiv{
+   margin: 20px 5%;
+}
+
+footer{
+    background-color: #0F6985;
+    color: white;
+    text-align: center;
+    margin: 0; 
+    padding: 0.1px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 1s;
+}
+footer p{
+    padding-bottom: 0;
+}
+
+a:hover{
+    color: #63AAC2;
+    text-decoration:underline;
+    transition: all 1s;
+}
