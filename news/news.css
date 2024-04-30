@@ -1,7 +1,10 @@
 .news{
     background-color: #63AAC2;
-    margin: 0;
 }
 .news a:hover{
     color: #054256;
+}
+
+.news .dropdown{
+    background-color: #63AAC2;
 }

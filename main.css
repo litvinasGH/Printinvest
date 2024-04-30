@@ -10,16 +10,26 @@ header ul{
     margin-top: 0;
     background-color: #054256;
     color: white;
-    display: flex;
+    display: flex; /* Это делает список горизонтальным */
     margin: 0;
     padding: 0;
-    align-items: center;
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
+    justify-content: space-around; /* Распределение элементов равномерно по горизонтали */
+    padding-left: 1%;
 }
-header ul il{
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header ul li{
     flex: 1;
-    margin: 0 5px;
+    /* margin: 0 5px; */
     font-size: 20px;
+    position: relative; 
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -48,4 +58,25 @@ a:hover{
     color: #63AAC2;
     text-decoration:underline;
     transition: all 1s;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #054256;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
