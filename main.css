@@ -15,22 +15,14 @@ header ul{
     padding: 0;
 }
 header ul il{
-    flex-grow: 1;
+    flex: 1;
     font-size: 20px;
 }
 body{
     margin: 0;
     padding: 0;
 }
-div{
-    border: black 1px solid;
-    height: 200px;
-    margin: 0;
-}
 
-.firstdiv, .secdiv{
-   margin: 20px 5%;
-}
 
 footer{
     background-color: #0F6985;

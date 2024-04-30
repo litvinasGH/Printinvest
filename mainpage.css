@@ -1,0 +1,9 @@
+div{
+    border: black 1px solid;
+    height: 200px;
+    margin: 0;
+}
+
+.firstdiv, .secdiv{
+   margin: 20px 5%;
+}
