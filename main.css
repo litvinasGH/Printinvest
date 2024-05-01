@@ -94,6 +94,10 @@ header .navDesctop ul li:hover .dropdown {
     
 }
 
+.mobile-menu-button{
+    display: none;
+}
+
 .navMob {
     display: none;
 }
