@@ -60,6 +60,9 @@ a {
     display: inline-block;
     width: 100%;
 }
+header a:first-child{
+    width: auto;
+}
 
 footer p {
     padding-bottom: 0;

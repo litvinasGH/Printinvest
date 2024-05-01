@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-.catalog a:hover {
-    color: #054256;
-}
-
 .items-list {
     display: flex;
     flex-flow: wrap;
@@ -34,22 +30,18 @@
     /* Сохранение пропорций 1:1 */
 }
 
-.item a {
-    display: block;
-    background-color: #054256;
-    width: 70%;
-    border: 1px black solid;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-}
-
-.item a:hover {
-    background-color: #63AAC2;
-    color: #054256;
-}
 
 .item p {
     margin: 10px;
+}
+
+.serchANDfilt{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.serchANDfilt > *{
+    width: 100%;
+    margin: 3px;
 }

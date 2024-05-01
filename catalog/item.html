@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя</title>
+    <link rel="stylesheet" href="/Printinvest/main.css">
+    <script src="/Printinvest/main.js"></script>
+    <style>
+        .info{
+            margin: 10px;
+
+        }
+        .info img {
+            object-fit: contain;
+            aspect-ratio: 1 / 1;
+            float: left;
+            margin-right: 10px;
+            width: 30%;
+            min-width: 200px;
+        }
+        .info a{
+            background-color: #054256;
+            display: inline-block;
+            width: 200px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .info p{
+            text-align: justify;
+            font-size: large;
+        }
+        .info div{
+            text-align: center;
+        }
+        html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    flex-grow: 1;
+    /* Другие стили */
+}
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get('name');
+            const img = params.get('img');
+            const about = params.get('about');
+            const type = params.get('type');
+            const maker = params.get('maker'); // Извлекаем значение 'maker'
+    
+            document.querySelector('.info h1').textContent = name;
+            document.querySelector('.info img').src = img;
+            document.querySelector('.info p').textContent = about;
+            document.querySelector('.info h3').textContent = `Тип: ${type}`;
+            document.querySelector('.info h2.maker').textContent = `Прозводитель: ${maker}`; // Вставляем значение 'maker'
+            document.querySelector('.info div .mail').href = `mailto:info@printinvest.by?subject=Покупка ${name}`;
+            document.querySelector('head title').textContent = `${type}: ${name}`;
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="/Printinvest/main.html"><img src="/Printinvest/assets/LOGO-WHITEpng.png" class="logo"></a>
+        <nav class="navDesctop">
+            <ul>
+                <li class="news"><a href="/Printinvest/news/news.html">Новости/Акции</a>
+                    <ul class="dropdown">
+                        <li><a href="/Printinvest/news/news.html#galery">Пункт 1</a></li>
+                        <li><a href="/Printinvest/news/news.html#fistdiv">Пункт 2</a></li>
+                        <li><a href="/Printinvest/news/news.html#secdiv">Пункт 3</a></li>
+                    </ul>
+                </li>
+                <li class="catalog">
+                    <a href="/Printinvest/catalog/catalog.html">Каталог</a>
+                </li>
+                <li class="serv"><a href="/Printinvest/serv/serv.html">Сервис</a>
+                    <ul class="dropdown">
+                        <li><a href="/Printinvest/serv/serv.html#services">Услуги</a></li>
+                        <li><a href="/Printinvest/serv/serv.html#sertTor">Сертификаты торговые</a></li>
+                        <li><a href="/Printinvest/serv/serv.html#sertEng">Сертификаты инженеров </a></li>
+                    </ul>
+                </li>
+                <li class="mar"><a href="/Printinvest/mark/mark.html">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navMob">
+            <ul>
+                <li class="news"><a href="/Printinvest/news/news.html">Новости/Акции</a>
+                    <ul>
+                        <li><a href="/Printinvest/news/news.html#galery">Пункт 1</a></li>
+                        <li><a href="/Printinvest/news/news.html#fistdiv">Пункт 2</a></li>
+                        <li><a href="/Printinvest/news/news.html#secdiv">Пункт 3</a></li>
+                    </ul>
+                </li>
+                <li class="catalog">
+                    <a href="/Printinvest/catalog/catalog.html">Каталог</a>
+                </li>
+                <li class="serv"><a href="/Printinvest/serv/serv.html">Сервис</a>
+                    <ul>
+                        <li><a href="/Printinvest/serv/serv.html#services">Услуги</a></li>
+                        <li><a href="/Printinvest/serv/serv.html#sertTor">Сертификаты торговые</a></li>
+                        <li><a href="/Printinvest/serv/serv.html#sertEng">Сертификаты инженеров </a></li>
+                    </ul>
+                </li>
+                <li class="mar"><a href="/Printinvest/mark/mark.html">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="info">
+        <img src="error" class="image">
+        <h1 class="name">Имя</h1>
+        <h2 class="maker">Прозводитель: прозводитель</h2>
+        <h3 class="type">Тип: тип</h3>
+        <p class="about">Описание</p>
+        <div>
+        <a href="tel:80172152218">Позвонить</a>
+        <a class="mail" href="mailto:info@printinvest.by">Написать</a>
+        </div>
+    </div>
+    <footer>
+        <p><a href="tel:80172152218">8-017-215-22-18</a> или <a href="tel:80172726446">8-017-272-64-46</a></p>
+        <p><a href="mailto:info@printinvest.by">info@printinvest.by</a></p>
+        <p><a href="https://maps.app.goo.gl/Vsjv5ht9Xpbm99Fn6">220090 г.Минск, ул Топографическая, д.9</a></p>
+    </footer>
+</body>
+
+</html>
