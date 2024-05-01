@@ -1,82 +1,96 @@
-header{
+@import url(mainMobile.css) (max-width:768px);
+
+
+header {
     background-color: #0F6985;
     text-align: center;
 }
-.logo{
+
+.logo {
 
     margin: 0;
 }
-header ul{
+
+header .navDesctop ul {
     margin-top: 0;
     background-color: #054256;
     color: white;
-    display: flex; /* Это делает список горизонтальным */
+    display: flex;
+    /* Это делает список горизонтальным */
     margin: 0;
     padding: 0;
-    align-items: center; /* Выравнивание элементов по центру по вертикали */
-    justify-content: space-around; /* Распределение элементов равномерно по горизонтали */
+    align-items: center;
+    /* Выравнивание элементов по центру по вертикали */
+    justify-content: space-around;
+    /* Распределение элементов равномерно по горизонтали */
     padding-left: 1%;
-}
 
-header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
 }
-header ul li{
+
+header .navDesctop ul li {
     flex: 1;
     /* margin: 0 5px; */
     font-size: 20px;
-    position: relative; 
+    position: relative;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
 
-footer{
+footer {
     background-color: #0F6985;
     color: white;
     text-align: center;
-    margin: 0; 
+    margin: 0;
     padding: 0.1px;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: all 1s;
 }
-footer p{
+
+footer p {
     padding-bottom: 0;
 }
 
-a:hover{
+a:hover {
     color: #63AAC2;
-    text-decoration:underline;
+    text-decoration: underline;
     transition: all 1s;
 }
 
-.dropdown {
+.navDesctop .dropdown {
     display: none;
     position: absolute;
     background-color: #054256;
     width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-header ul li:hover .dropdown {
+header .navDesctop ul li:hover .dropdown {
     display: block;
 }
 
-.dropdown li {
+.navDesctop .dropdown li {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+.navMob {
+    display: none;
+}
+

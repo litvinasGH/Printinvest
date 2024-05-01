@@ -1,0 +1,59 @@
+.navDesctop{
+    display: none; 
+}
+
+.navMob{
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Выравнивание сверху */
+    left: 0; /* Выравнивание слева */
+    width: 250px; /* Ширина меню */
+    height: 100%; /* Высота меню */
+    background-color: #054256; /* Фон меню */
+    overflow-x: hidden; /* Скрываем лишний контент по горизонтали */
+    transition: 0.5s; /* Анимация */
+    padding: 0;
+    text-align: left;
+}
+.navMob>ul{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+}
+.navMob>ul>li{
+    padding: 10px;
+}
+.navMob ul li ul{
+    list-style-type: none; /* Убираем стандартные маркеры */
+}
+
+.navMob ul li ul li::before {
+    content: "•"; /* Создаем пользовательский маркер */
+    color: white; /* Задаем цвет маркера */
+    display: inline-block; /* Делаем маркер блочным элементом */
+    width: 1em; /* Задаем ширину маркера */
+    margin-left: -1em; /* Сдвигаем маркер влево, чтобы он выровнялся с текстом */
+}
+.navMob ul li ul a{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+/* Стили для элементов внутри меню */
+.navMob li {
+    padding: 8px 0;
+}
+
+/* Стили для кнопки, которая будет открывать и закрывать меню */
+.mobile-menu-button {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* Стили для анимации открытия и закрытия меню */
+.navMob.open {
+    display: block;
+}
