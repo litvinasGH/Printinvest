@@ -114,7 +114,7 @@ document.getElementById('makerFilter').addEventListener('change', filterItems);
 // Example of loading items and then calling filterItems
 loadXML('/Printinvest/catalog/items/items.xml').then(() => {
     populateFilters(items); // Заполняем фильтры
-    filterItems(); // Сортируем и отображаем эл����менты по имени
+    filterItems(); // Сортируем и отображаем эл������менты по имени
 
     // Находим минимальное и максимальное значения скорости печати
     const minSpeed = Math.min(...items.map(item => item.speed));
@@ -178,7 +178,8 @@ function loadItemDetails(xmlPath, itemName) {
                 // Здесь к��д для отображения информации о продукте в item.html
                 // Например, перенаправление на item.html �� параметрами в URL
                 // Добавл��ем значение 'maker' в URL
-                window.location.href = `/Printinvest/catalog/item.html?name=${item.name}&img=${item.img}&about=${item.about}&type=${item.type}&maker=${item.maker}`;
+                window.location.href = `/Printinvest/catalog/item.html?name=${encodeURIComponent(item.name)}`;
+                //&img=${item.img}&about=${item.about}&type=${item.type}&maker=${item.maker}
             }
         })
         .catch(error => console.error('Ошибка при загрузке XML:', error));

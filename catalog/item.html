@@ -26,6 +26,7 @@
             width: 200px;
             font-size: 30px;
             text-align: center;
+            margin-bottom: 10px;
         }
         .info p{
             text-align: justify;
@@ -46,24 +47,8 @@
     /* Другие стили */
 }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const params = new URLSearchParams(window.location.search);
-            const name = params.get('name');
-            const img = params.get('img');
-            const about = params.get('about');
-            const type = params.get('type');
-            const maker = params.get('maker'); // Извлекаем значение 'maker'
-    
-            document.querySelector('.info h1').textContent = name;
-            document.querySelector('.info img').src = img;
-            document.querySelector('.info p').textContent = about;
-            document.querySelector('.info h3').textContent = `Тип: ${type}`;
-            document.querySelector('.info h2.maker').textContent = `Прозводитель: ${maker}`; // Вставляем значение 'maker'
-            document.querySelector('.info div .mail').href = `mailto:info@printinvest.by?subject=Покупка ${name}`;
-            document.querySelector('head title').textContent = `${type}: ${name}`;
-        });
-    </script>
+<script src = "/Printinvest/catalog/item.js"></script>
+
 </head>
 
 <body>
@@ -117,11 +102,11 @@
         </nav>
     </header>
     <div class="info">
-        <img src="error" class="image">
-        <h1 class="name">Имя</h1>
-        <h2 class="maker">Прозводитель: прозводитель</h2>
-        <h3 class="type">Тип: тип</h3>
-        <p class="about">Описание</p>
+        <img src="/Printinvest/assets/erorr 404.png" class="image">
+        <h1 class="name">Ошибка 404: Не найден</h1>
+        <h2 class="maker">Прозводитель: неизвестно</h2>
+        <h3 class="type">Тип: неизвестно</h3>
+        <p class="about">Открывайте эту страницу, через каталог!</p>
         <div>
         <a href="tel:80172152218">Позвонить</a>
         <a class="mail" href="mailto:info@printinvest.by">Написать</a>
