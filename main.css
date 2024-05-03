@@ -10,6 +10,10 @@ header {
 
     margin: 0;
 }
+.main {
+    padding-left: 2%;
+    padding-right: 2%;
+}
 
 header .navDesctop ul {
     margin-top: 0;
@@ -97,6 +101,7 @@ header .navDesctop ul li:hover .dropdown {
     
 }
 
+@media (min-width: 768px) {
 .mobile-menu-button{
     display: none;
 }
@@ -104,4 +109,4 @@ header .navDesctop ul li:hover .dropdown {
 .navMob {
     display: none;
 }
-
+}

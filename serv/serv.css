@@ -8,3 +8,35 @@
 .serv .dropdown{
     background-color: #63AAC2;
 }
+.sertTor, .sertEng{
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.sertTor div, .sertEng div{
+    align-self: flex-end;
+    flex: 1 1 230px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+.sertTor h1, .sertEng h1{
+    width: 100%;
+}
+.sertTor>img{
+    margin: 0;
+    width: 100%;
+}
+img{
+    width: 80%;
+    margin: 15%;
+    transition: 1s;
+}
+img:hover{
+    width: 100%;
+    margin: 0;
+}

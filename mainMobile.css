@@ -5,14 +5,14 @@
 .navMob{
     position: fixed; /* Фиксированное позиционирование */
     top: 0; /* Выравнивание сверху */
-    left: 0; /* Выравнивание слева */
+    left: -250px; /* Выравнивание слева */
     width: 250px; /* Ширина меню */
     height: 100%; /* Высота меню */
-    background-color: #054256; /* Фон меню */
+    background-color: #054256ce; /* Фон меню */
     overflow-x: hidden; /* Скрываем лишний контент по горизонтали */
-    transition: 0.5s; /* Анимация */
     padding: 0;
     text-align: left;
+    transition: 1s;
 }
 .navMob>ul{
     list-style-type: none;
@@ -45,7 +45,7 @@
 
 /* Стили для кнопки, которая будет открывать и закрывать меню */
 .mobile-menu-button {
-    display: block !important;
+    display: block;
     position: absolute;
     top: 10px;
     right: 25px;
@@ -57,5 +57,6 @@
 
 /* Стили для анимации открытия и закрытия меню */
 .navMob.open {
-    display: block;
+    /* display: block; */
+    left: 0px;
 }

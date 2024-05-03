@@ -1,14 +1,14 @@
 // fetch.js
 
-let items = [];
+let items = [];//создаём массив
 
 // Функция для загрузки XML и преобразования его в JSON
-function loadXML(url) {
-    return fetch(url)
-        .then(response => response.text())
-        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-        .then(data => {
-            items = Array.from(data.querySelectorAll('item')).map(item => {
+function loadXML(url) {//url - ссылка на xml файл(принимается при вызове функции)
+    return fetch(url)//захват файла
+        .then(response => response.text())//чтение файла
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))//распознование текста как xml-документа
+        .then(data => {//получение данных
+            items = Array.from(data.querySelectorAll('item')).map(item => {//заполняем массив структурой где 'item' - имя тега в xml, item - имя структуры
                 return {
                     name: item.querySelector('name').textContent,
                     img: item.querySelector('img').textContent,
@@ -18,7 +18,7 @@ function loadXML(url) {
                     speed: parseInt(item.querySelector('speed').textContent, 10)
                 };
             });
-            return items;
+            return items;//возращаем готовый массив
         });
 }
 
@@ -46,26 +46,26 @@ function populateFilters(items) {
 }
 // Функция для добавления элементов в items-list
 function addItemsToDOM(items) {
-    const itemsList = document.querySelector('.items-list');
+    const itemsList = document.querySelector('.items-list');//создаём переменную хранящая элемент
     // Очищаем список перед добавлением новых элементов
-    itemsList.innerHTML = '';
-    items.forEach(item => {
-        const itemDiv = document.createElement('div');
-        itemDiv.className = 'item';
+    itemsList.innerHTML = '';//(опционально) удаляем элементы внутри .items-list
+    items.forEach(item => {//цикл переберающий элементы массива
+        const itemDiv = document.createElement('div');//создаём контейнер для товара
+        itemDiv.className = 'item';//выдаём класс контейнеру
         itemDiv.innerHTML = `
             <img src="${item.img}">
             <h3>${item.name}</h3>
             <h3>Тип: ${item.type}</h3>
-        `;
-        // Добавляем обработчик событий onclick
-        itemDiv.onclick = function() {
+        `;//заполняем контейнер информацией
+        
+        itemDiv.onclick = function() {//(опционально) вызов функции при нажатии на контейнер
             loadItemDetails('/Printinvest/catalog/items/items.xml', item.name);
         };
-        itemsList.appendChild(itemDiv);
+        itemsList.appendChild(itemDiv);//добовляем в наш .items-list созданный div
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {//функция вызывающаяся после загрузки страницы
 // Event listener for type and maker filters
 document.getElementById('typeFilter').addEventListener('change', filterItems);
 document.getElementById('makerFilter').addEventListener('change', filterItems);
@@ -171,18 +171,7 @@ function filterItems() {
 
 
 function loadItemDetails(xmlPath, itemName) {
-    loadXML(xmlPath)
-        .then(items => {
-            const item = items.find(item => item.name === itemName);
-            if (item) {
-                // Здесь к��д для отображения информации о продукте в item.html
-                // Например, перенаправление на item.html �� параметрами в URL
-                // Добавл��ем значение 'maker' в URL
-                window.location.href = `/Printinvest/catalog/item.html?name=${encodeURIComponent(item.name)}`;
-                //&img=${item.img}&about=${item.about}&type=${item.type}&maker=${item.maker}
-            }
-        })
-        .catch(error => console.error('Ошибка при загрузке XML:', error));
+    window.location.href = `/Printinvest/catalog/item.html?name=${encodeURIComponent(itemName)}`;
 }
 
 // Функция для периодической проверки обновлений в items.xml
