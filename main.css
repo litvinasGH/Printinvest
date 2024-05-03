@@ -1,11 +1,45 @@
 @import url(mainMobile.css) (max-width:768px);
 
 
+#theme-toggle-button{
+    float: right;
+    aspect-ratio: 1 / 1;
+    width: 25px;
+    background-color: #0F6985;
+    color: white;
+}
 header {
     background-color: #0F6985;
     text-align: center;
 }
 
+html{
+    background-color: #0F6985;
+}
+
+/* Светлая тема */
+.light-theme {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+.light-theme *{
+    border-color: #000000 !important;
+}
+
+/* Тёмная тема */
+.dark-theme {
+    --background-color: #000000;
+    --text-color: #ffffff;
+}
+.dark-theme *{
+    border-color: white !important;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
 .logo {
 
     margin: 0;
@@ -24,7 +58,7 @@ header .navDesctop ul {
     margin: 0;
     padding: 0;
     align-items: center;
-    /* Выравнивание элементов по центру по вертикали */
+    /* Выравнивание ��лементов по центру по вертикали */
     justify-content: space-around;
     /* Распределение элементов равномерно по горизонтали */
     padding-left: 1%;
@@ -109,4 +143,10 @@ header .navDesctop ul li:hover .dropdown {
 .navMob {
     display: none;
 }
+}
+
+
+.dark-theme input[type="text"], .dark-theme input[type="number"], .dark-theme select{
+    background-color: rgb(42, 42, 42);
+    color: white;
 }

@@ -42,6 +42,13 @@ let items = [];
         loadXML('/Printinvest/catalog/items/items.xml')
         .then(loadedItems => addItemsToDOM(loadedItems, nameURL)) // Исправленный вызов функции
         .catch(error => console.error('Ошибка при загрузке XML:', error));
+
+        document.querySelectorAll('.mail').forEach(mailLink => {
+            mailLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = "/Printinvest/form.html?name="+encodeURIComponent(nameURL);
+            });
+        });
     });
 
     

@@ -12,6 +12,7 @@
     overflow-x: hidden; /* Скрываем лишний контент по горизонтали */
     padding: 0;
     text-align: left;
+    z-index: 1;
     transition: 1s;
 }
 .navMob>ul{
@@ -48,7 +49,7 @@
     display: block;
     position: absolute;
     top: 10px;
-    right: 25px;
+    right: 27px;
     font-size: 36px;
     cursor: pointer;
     background-color: #0F6985;

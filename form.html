@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="rus">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости/Акции Принтинвест</title>
-    <link href="/Printinvest/main.css" rel="stylesheet">
-    <link href="news.css" rel="stylesheet">
-    <script src="/Printinvest/main.js"></script>
+    <title>Форма для письма</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="form.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <script src="form.js"></script>
 </head>
+
 <body>
     <header>
         <a href="/Printinvest/main.html"><img src="/Printinvest/assets/LOGO-WHITEpng.png" class="logo"></a>
@@ -59,19 +62,30 @@
             </ul>
         </nav>
     </header>
-    <section class="galery" id="galery">
+    <form id="serviceForm">
+        <label for="companyName">Имя юридического лица:</label>
+        <input type="text" id="companyName" name="companyName" required>
 
-    </section>
-    <section class="firstdiv" id=""firstdiv>
 
-    </section>
-    <section class="secdiv" id="secdiv">
-        <div class=""></div>
-    </section>
+
+        <p>Выберите услугу:</p>
+
+        <label for="purchase"><input type="radio" id="purchase" name="service" value="purchase" checked
+                required>Покупка</label><br>
+
+        <label for="maintenance"> <input type="radio" id="maintenance" name="service"
+                value="maintenance">Техобслуживание</label><br>
+
+        <label for="product">Товар:</label>
+        <input type="text" id="product" name="product" required>
+
+        <button type="submit">Отправить</button>
+    </form>
     <footer>
         <p><a href="tel:80172152218">8-017-215-22-18</a> или <a href="tel:80172726446">8-017-272-64-46</a></p>
-        <p><a href = "mailto:info@printinvest.by">info@printinvest.by</a></p>
-        <p><a href = "https://maps.app.goo.gl/Vsjv5ht9Xpbm99Fn6">220090 г.Минск, ул Топографическая, д.9</a></p>
+        <p><a href="mailto:info@printinvest.by">info@printinvest.by</a></p>
+        <p><a href="https://maps.app.goo.gl/Vsjv5ht9Xpbm99Fn6">220090 г.Минск, ул Топографическая, д.9</a></p>
     </footer>
 </body>
+
 </html>

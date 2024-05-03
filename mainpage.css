@@ -1,25 +1,68 @@
-div{
+div,
+section {
     border: black 1px solid;
-    height: 200px;
     margin: 0;
     padding: 10px;
 }
 
-.firstdiv, .secdiv{
-   margin: 20px 5%;
+.firstdiv,
+.secdiv {
+    margin: 20px 5%;
 }
-.secdiv{
+
+.secdiv {
     height: auto;
 }
 
-iframe{
+iframe {
     width: 100%;
     height: 100%;
     margin: 0;
     border: 1px black solid;
 }
-.map{
+
+.map {
     width: 50%;
     padding: 0;
     border: none;
+}
+
+.connect {
+    text-align: center;
+    padding: 50px;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/plotter-2138990_1920.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.connect *{
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-size:160%;
+}
+.connect div{
+    border: none;
+}
+
+.connect a {
+    background-color: #054256;
+    display: inline-block;
+    width: 49%;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media (max-width: 640px){
+    .connect * {font-size: 110%;}
+    .connect a{
+        width: max-content;
+        font-size: 20px;
+    }
 }
