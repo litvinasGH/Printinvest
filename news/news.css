@@ -11,10 +11,32 @@
 
 div{
     border: black 1px solid;
-    height: 200px;
+    height: max-content;
     margin: 0;
 }
 
 .firstdiv, .secdiv{
    margin: 20px 5%;
+}
+
+.galery img{
+    width: 100%;
+}
+
+.firstdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.firstdiv div{
+    padding: 0;
+    flex: 1 1 47%; 
+    margin: 5px;
+    aspect-ratio: 10 / 3;
+}
+
+.firstdiv img{
+    float: left;
+    height: 100%;
 }

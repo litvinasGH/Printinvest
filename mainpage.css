@@ -12,17 +12,18 @@ section {
 
 .secdiv {
     height: auto;
+    border: none;
 }
 
 iframe {
     width: 100%;
-    height: 100%;
+    height: 170px;
     margin: 0;
     border: 1px black solid;
 }
 
 .map {
-    width: 50%;
+    width: 100%;
     padding: 0;
     border: none;
 }
@@ -59,6 +60,42 @@ iframe {
     text-align: center;
     margin-bottom: 10px;
 }
+
+.firstdiv{
+    text-align: center;
+    font-size: larger;
+    border: none;
+}
+
+.firstdiv div{
+    border: none;
+    border-bottom: solid;
+}
+
+.firstdiv div:nth-child(2){
+    border-top: solid;
+}
+.firstdiv span{
+    color: #41A2C2;
+}
+
+.firstdiv img{
+    width: 10%;
+}
+
+.secdiv a{
+    color: black;
+    display: inline;
+    margin: 1px;
+}
+.secdiv p{
+    margin: 1px;
+}
+
+.dark-theme .secdiv a{
+    color: white;
+}
+
 @media (max-width: 640px){
     .connect * {font-size: 110%;}
     .connect a{
