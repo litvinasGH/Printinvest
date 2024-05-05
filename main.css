@@ -1,162 +1,146 @@
-@import url(mainMobile.css) (max-width:768px);
-
-
-#theme-toggle-button{
-    position: absolute;
-    top: 10px;
-    left: 27px;
-    font-size: 30px;
-    aspect-ratio: 1 / 1;
-    width: 50px;
-    background-color: #0F6985;
-    color: white;
+@import url(mainMobile.css) (max-width: 1000px);
+#theme-toggle-button {
+  position: absolute;
+  top: 10px;
+  left: 27px;
+  font-size: 30px;
+  aspect-ratio: 1/1;
+  width: 50px;
+  background-color: #0F6985;
+  color: white;
 }
+
 header {
-    background-color: #0F6985;
-    text-align: center;
+  background-color: #0F6985;
+  text-align: center;
+}
+header .navDesctop ul {
+  margin-top: 0;
+  background-color: #054256;
+  color: white;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 1%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header .navDesctop ul li {
+  flex: 1;
+  font-size: 20px;
+  position: relative;
+}
+header .navDesctop ul li:hover .dropdown {
+  display: block;
+}
+header a:first-child {
+  width: auto;
 }
 
-html{
-    background-color: #0F6985;
+html {
+  background-color: #0F6985;
 }
 
-/* Светлая тема */
 .light-theme {
-    --background-color: #ffffff;
-    --text-color: #000000;
+  --background-color: #ffffff;
+  --text-color: #000000;
 }
-.light-theme *{
-    border-color: #000000 !important;
+.light-theme * {
+  border-color: #000000 !important;
 }
 
-/* Тёмная тема */
 .dark-theme {
-    --background-color: #000000;
-    --text-color: #ffffff;
+  --background-color: #000000;
+  --text-color: #ffffff;
 }
-.dark-theme *{
-    border-color: white !important;
+.dark-theme * {
+  border-color: white !important;
 }
-
+.dark-theme input[type=text] {
+  background-color: rgb(42, 42, 42);
+  color: white;
+}
+.dark-theme input[type=number] {
+  background-color: rgb(42, 42, 42);
+  color: white;
+}
+.dark-theme select {
+  background-color: rgb(42, 42, 42);
+  color: white;
+}
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-    margin-top: 5px;
-    height: 75px;
-    display: inline-block;
+  margin-top: 5px;
+  height: 75px;
+  display: inline-block;
 }
+
 .main {
-    padding-left: 2%;
-    padding-right: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
-
-header .navDesctop ul {
-    margin-top: 0;
-    background-color: #054256;
-    color: white;
-    display: flex;
-    /* Это делает список горизонтальным */
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    /* Выравнивание ��лементов по центру по вертикали */
-    justify-content: space-around;
-    /* Распределение элементов равномерно по горизонтали */
-    padding-left: 1%;
-
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-header .navDesctop ul li {
-    flex: 1;
-    /* margin: 0 5px; */
-    font-size: 20px;
-    position: relative;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 
 footer {
-    background-color: #0F6985;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0.1px;
+  background-color: #0F6985;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0.1px;
+}
+footer a {
+  display: inline;
+}
+footer p {
+  padding-bottom: 0;
 }
 
 a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 1s;
-    display: inline-block;
-    width: 100%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 1s;
+  display: inline-block;
+  width: 100%;
 }
-header a:first-child{
-    width: auto;
-}
-
-footer a{
-    display: inline;
-}
-
-footer p {
-    padding-bottom: 0;
-}
-
 a:hover {
-    color: #63AAC2;
-    text-decoration: underline;
-    transition: all 1s;
+  color: #63AAC2;
+  text-decoration: underline;
+  transition: all 1s;
 }
 
 .navDesctop .dropdown {
-    display: none;
-    position: absolute;
-    background-color: #054256;
-    width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #054256;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
-
-header .navDesctop ul li:hover .dropdown {
-    display: block;
-}
-
 .navDesctop .dropdown li {
-    padding: 12px;
-    padding-left: auto;
-    padding-right: auto;
-    text-decoration: none;
-    display: block;
-    
-    
+  padding: 12px;
+  padding-left: auto;
+  padding-right: auto;
+  text-decoration: none;
+  display: block;
 }
 
-@media (min-width: 768px) {
-.mobile-menu-button{
+@media (min-width: 1000px) {
+  .mobile-menu-button {
     display: none;
+  }
 }
-
-.navMob {
+@media (min-width: 1000px) {
+  .navMob {
     display: none;
-}
-}
-
-
-.dark-theme input[type="text"], .dark-theme input[type="number"], .dark-theme select{
-    background-color: rgb(42, 42, 42);
-    color: white;
-}
-
+  }
+}/*# sourceMappingURL=main.css.map */
