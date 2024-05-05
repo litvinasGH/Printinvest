@@ -43,9 +43,11 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
 }
-.logo {
 
-    margin: 0;
+.logo {
+    margin-top: 5px;
+    height: 75px;
+    display: inline-block;
 }
 .main {
     padding-left: 2%;
