@@ -12,7 +12,7 @@
     overflow-x: hidden; /* Скрываем лишний контент по горизонтали */
     padding: 0;
     text-align: left;
-    z-index: 1;
+    z-index: 10;
     transition: 1s;
 }
 .navMob>ul{

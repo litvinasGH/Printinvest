@@ -28,6 +28,45 @@ iframe {
     border: none;
 }
 
+@keyframes slideshow {
+    0%{
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/plotter-2138990_1920.webp);
+        background-size: cover;
+    }
+    20%{
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/plotter-2138990_1920.webp);
+        background-size: cover;
+    }
+    25%{
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/pantum_p25072-3486798414.jpg);
+        background-size: cover;
+    }
+    45%{
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/pantum_p25072-3486798414.jpg);
+        background-size: cover;
+    }
+    50%{
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/100029128241b3.jpg);
+        background-size: cover;
+    }
+    70%{
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/100029128241b3.jpg);
+        background-size: cover;
+    }
+    75%{
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/71c875f76e1dbbbc1ab53e2d7387599d-3055813891.jpg);
+        background-size: cover;
+    }
+    95%{
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/71c875f76e1dbbbc1ab53e2d7387599d-3055813891.jpg);
+        background-size: cover;
+    }
+    100%{
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/plotter-2138990_1920.webp);
+        background-size: cover;
+    }
+}
+
 .connect {
     text-align: center;
     padding: 50px;
@@ -40,6 +79,7 @@ iframe {
     align-items: center;
     justify-content: center;
     border: none;
+    animation: slideshow 20s infinite;
 }
 .connect *{
     margin-top: 30px;
@@ -81,6 +121,7 @@ iframe {
 
 .firstdiv img{
     width: 10%;
+    margin: 20px;
 }
 
 .secdiv a{
@@ -95,6 +136,100 @@ iframe {
 .dark-theme .secdiv a{
     color: white;
 }
+
+@keyframes shake {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 3px;
+        top: 3px;
+    }
+    50%{
+        left: 3px;
+        top: -3px;
+    }
+    75%{
+        left: -3px;
+        top: 3px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.first {
+    position: relative;
+    animation: shake .3s infinite;
+}
+
+@keyframes shakesec{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    10%{
+        transform: rotate(0deg) scale(1.2);
+    }
+    15%{
+        transform: rotate(10deg) scale(1.2);
+    }
+    20%{
+        transform: rotate(-10deg) scale(1.2);
+    }
+    25%{
+        transform: rotate(10deg) scale(1.2);
+    }
+    30%{
+        transform: rotate(-10deg) scale(1.2);
+    }
+    35%{
+        transform: rotate(10deg) scale(1.2);
+    }
+    40%{
+        transform: rotate(-10deg) scale(1.2);
+    }
+    45%{
+        transform: rotate(10deg) scale(1.2);
+    }
+    50%{
+        transform: rotate(-10deg) scale(1.2);
+    }
+    60%{
+        transform: rotate(0deg) scale(1);
+    }
+
+}
+
+.sec{
+    position: relative;
+    animation: shakesec 3s infinite;
+}
+
+@keyframes thr {
+    0%{
+        transform: scale(1) rotate(0);
+    }
+    10%{
+        transform: scale(1.2) rotate(0);
+    }
+    50%{
+        transform: scale(1.2) rotate(360deg);
+    }
+    60%{
+        transform: scale(1) rotate(360deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.thre{
+    position: relative;
+    animation: thr 3s infinite;
+}
+
 
 @media (max-width: 640px){
     .connect * {font-size: 110%;}
