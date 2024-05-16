@@ -33,10 +33,5 @@
 }
 section div img{
     width: 80%;
-    margin: 20px;
-    transition: 1s;
 }
-img:hover{
-    width: 100%;
-    margin: 0;
-}
+
