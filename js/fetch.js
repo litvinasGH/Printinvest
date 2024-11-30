@@ -59,7 +59,7 @@ function addItemsToDOM(items) {
         `;//заполняем контейнер информацией
         
         itemDiv.onclick = function() {//(опционально) вызов функции при нажатии на контейнер
-            loadItemDetails('/Printinvest/catalog/items/items.xml', item.name);
+            loadItemDetails('/catalog/items/items.xml', item.name);
         };
         itemsList.appendChild(itemDiv);//добовляем в наш .items-list созданный div
     });
@@ -171,7 +171,7 @@ function filterItems() {
 
 
 function loadItemDetails(xmlPath, itemName) {
-    window.location.href = `/Printinvest/catalog/item.html?name=${encodeURIComponent(itemName)}`;
+    window.location.href = `/html/item.html?name=${encodeURIComponent(itemName)}`;
 }
 
 // Функция для периодической проверки обновлений в items.xml
