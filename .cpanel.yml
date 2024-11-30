@@ -4,3 +4,6 @@ deployment:
     - export DEPLOYPATH=/home/printinv/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp main.css $DEPLOYPATH
+    - /bin/cp mainpage.css $DEPLOYPATH
+    - /bin/cp mainMobile.css $DEPLOYPATH
+    - /bin/cp form.css $DEPLOYPATH
