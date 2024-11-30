@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/printinv/public_html/
-    - /bin/cp main.html $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
     - /bin/cp main.css $DEPLOYPATH
