@@ -112,7 +112,7 @@ document.getElementById('makerFilter').addEventListener('change', filterItems);
 });
 
 // Example of loading items and then calling filterItems
-loadXML('/Printinvest/catalog/items/items.xml').then(() => {
+loadXML('/catalog/items/items.xml').then(() => {
     populateFilters(items); // Заполняем фильтры
     filterItems(); // Сортируем и отображаем эл������менты по имени
 
@@ -176,7 +176,7 @@ function loadItemDetails(xmlPath, itemName) {
 
 // Функция для периодической проверки обновлений в items.xml
 function checkForUpdates() {
-    loadXML('/Printinvest/catalog/items/items.xml')
+    loadXML('/catalog/items/items.xml')
         .then(addItemsToDOM)
         .catch(error => console.error('Оши����ка при заг��узке XML:', error));
 }
