@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/printinv/repositories/Printinvest/
+    - /bin/cp main.html $DEPLOYPATH
+    - /bin/cp main.css $DEPLOYPATH
