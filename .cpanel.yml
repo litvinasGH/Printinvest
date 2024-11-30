@@ -3,7 +3,11 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/printinv/public_html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp main.css $DEPLOYPATH
-    - /bin/cp mainpage.css $DEPLOYPATH
-    - /bin/cp mainMobile.css $DEPLOYPATH
-    - /bin/cp form.css $DEPLOYPATH
+    - /bin/cp css $DEPLOYPATH
+    - /bin/cp serv $DEPLOYPATH
+    - /bin/cp js $DEPLOYPATH
+    - /bin/cp html $DEPLOYPATH
+    - /bin/cp catalog $DEPLOYPATH
+    - /bin/cp plotter-2138990_1920.webp $DEPLOYPATH
+    - /bin/cp assets $DEPLOYPATH
+    - /bin/cp mark $DEPLOYPATH
