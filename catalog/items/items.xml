@@ -3,7 +3,7 @@
     <item>
         <name>Pantum P2516</name>
         <maker>Pantum</maker>
-        <img>/Printinvest/catalog/items/img/Pantum_P2516.jpg</img>
+        <img>/catalog/items/img/Pantum_P2516.jpg</img>
         <type>Принтер</type>
         <speed>22</speed>
         <about>Функции: печать Максимальный формат бумаги: A4 Скорость печати А4: 22 стр./мин.
@@ -14,7 +14,7 @@
     <item>
         <name>Pantum P3010DW</name>
         <maker>Pantum</maker>
-        <img>/Printinvest/catalog/items/img/Pantum_P3010DW.jpg</img>
+        <img>/catalog/items/img/Pantum_P3010DW.jpg</img>
         <type>Принтер</type>
         <speed>30</speed>
         <about>Функции: печать Максимальный формат бумаги: A4 Скорость печати А4: 30 стр./мин.
@@ -25,7 +25,7 @@
     <item>
         <name>Pantum P3300DW</name>
         <maker>Pantum</maker>
-        <img>/Printinvest/catalog/items/img/Pantum_P3300DW.jpg</img>
+        <img>/catalog/items/img/Pantum_P3300DW.jpg</img>
         <type>Принтер</type>
         <speed>33</speed>
         <about>Функции: печать Максимальный формат бумаги: A4 Скорость печати А4: 33 стр./мин.
@@ -36,7 +36,7 @@
     <item>
         <name>Pantum BP5100DN/DW</name>
         <maker>Pantum</maker>
-        <img>/Printinvest/catalog/items/img/Pantum_BP5100DN_DW.jpg</img>
+        <img>/catalog/items/img/Pantum_BP5100DN_DW.jpg</img>
         <type>Принтер</type>
         <speed>33</speed>
         <about>Функции: печать Максимальный формат бумаги: A4 Скорость печати А4: 33 стр./мин.
@@ -47,7 +47,7 @@
     <item>
         <name>Pantum M6500</name>
         <maker>Pantum</maker>
-        <img>/Printinvest/catalog/items/img/Pantum_M6500.jpg</img>
+        <img>/catalog/items/img/Pantum_M6500.jpg</img>
         <type>МФУ</type>
         <speed>22</speed>
         <about>Функции: Копир-Принтер-Сканер Максимальный формат бумаги: A4 Скорость печати А4: 22
@@ -58,7 +58,7 @@
     <item>
         <name>Pantum M6700DW</name>
         <maker>Pantum</maker>
-        <img>/Printinvest/catalog/items/img/Pantum_M6700DW.jpg</img>
+        <img>/catalog/items/img/Pantum_M6700DW.jpg</img>
         <type>МФУ</type>
         <speed>30</speed>
         <about>Функции: Копир-Принтер-Сканер Максимальный формат бумаги: A4 Скорость печати А4: 30
@@ -69,7 +69,7 @@
     <item>
         <name>Pantum M7100DW</name>
         <maker>Pantum</maker>
-        <img>/Printinvest/catalog/items/img/Pantum_M7100DW.jpg</img>
+        <img>/catalog/items/img/Pantum_M7100DW.jpg</img>
         <type>МФУ</type>
         <speed>33</speed>
         <about>Функции: Копир-Принтер-Сканер Максимальный формат бумаги: A4 Скорость печати А4: 33
@@ -80,7 +80,7 @@
     <item>
         <name>Pantum BM5100ADN/ADW </name>
         <maker>Pantum</maker>
-        <img>/Printinvest/catalog/items/img/Pantum_BM5100ADN_ADW.jpg</img>
+        <img>/catalog/items/img/Pantum_BM5100ADN_ADW.jpg</img>
         <type>МФУ</type>
         <speed>40</speed>
         <about>Функции: Копир-Принтер-Сканер Максимальный формат бумаги: A4 Скорость печати А4: 40
