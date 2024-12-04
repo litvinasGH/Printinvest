@@ -29,7 +29,7 @@ function addItemsToDOM(items, nameURL) {
             itemDetailsContainer.querySelector('.type').textContent = item.type;
             itemDetailsContainer.querySelector('.about').textContent = item.about;
             itemDetailsContainer.querySelector('.image').src = item.img;
-            itemDetailsContainer.querySelector('.mail').href = `mailto:info@printinvest.by?subject=Покупка ${item.name}`;
+            itemDetailsContainer.querySelector('.mail').href = `mailto:info@printinvest.by?subject=${encodeURIComponent(item.name)}`;
             document.title = item.name;
             var link = document.createElement('link');
 
@@ -48,16 +48,16 @@ function addItemsToDOM(items, nameURL) {
 document.addEventListener('DOMContentLoaded', function () {
     const params = new URLSearchParams(window.location.search);
     const nameURL = decodeURIComponent(params.get('name'));
-    loadXML('/Printinvest/catalog/items/items.xml')
+    loadXML('/catalog/items/items.xml')
         .then(loadedItems => addItemsToDOM(loadedItems, nameURL)) // Исправленный вызов функции
         .catch(error => console.error('Ошибка при загрузке XML:', error));
 
-    document.querySelectorAll('.mail').forEach(mailLink => {
-        mailLink.addEventListener('click', function (event) {
-            event.preventDefault();
-            window.location.href = "/Printinvest/form.html?name=" + encodeURIComponent(nameURL);
-        });
-    });
+    // document.querySelectorAll('.mail').forEach(mailLink => {
+    //     mailLink.addEventListener('click', function (event) {
+    //         event.preventDefault();
+    //         window.location.href = "/form.html?name=" + encodeURIComponent(nameURL);
+    //     });
+    // });
 });
 
 

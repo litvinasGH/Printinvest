@@ -30,47 +30,47 @@ iframe {
 
 @keyframes slideshow {
     0%{
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/plotter-2138990_1920.webp);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/plotter-2138990_1920.webp);
         background-size: cover;
         background-position: center;
     }
     20%{
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/plotter-2138990_1920.webp);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/plotter-2138990_1920.webp);
         background-size: cover;
         background-position: center;
     }
     25%{
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/pantum_p25072-3486798414.jpg);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/pantum_p25072-3486798414.jpg);
         background-size: cover;
         background-position: center;
     }
     45%{
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/pantum_p25072-3486798414.jpg);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/pantum_p25072-3486798414.jpg);
         background-size: cover;
         background-position: center;
     }
     50%{
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/100029128241b3.jpg);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/100029128241b3.jpg);
         background-size: cover;
         background-position: center;
     }
     70%{
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/100029128241b3.jpg);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/100029128241b3.jpg);
         background-size: cover;
         background-position: center;
     }
     75%{
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/71c875f76e1dbbbc1ab53e2d7387599d-3055813891.jpg);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/71c875f76e1dbbbc1ab53e2d7387599d-3055813891.jpg);
         background-size: cover;
         background-position: center;
     }
     95%{
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/assets/71c875f76e1dbbbc1ab53e2d7387599d-3055813891.jpg);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/71c875f76e1dbbbc1ab53e2d7387599d-3055813891.jpg);
         background-size: cover;
         background-position: center;
     }
     100%{
-        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Printinvest/plotter-2138990_1920.webp);
+        background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/plotter-2138990_1920.webp);
         background-size: cover;
         background-position: center;
     }
